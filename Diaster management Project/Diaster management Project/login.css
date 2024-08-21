@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(bimage1.jpeg);
+}
+.wrapper {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height:100vh;
+  width:100%;
+   background:url('https://drive.usercontent.google.com/download?id=1euiZNblW9OrIXz8kqz-NOqYdGH84oktG&export=view&authuser=0')no-repeat ; 
+  background-size:cover;
+  background-position:center;
+    animation:animateBg 5s linear infinite;  
+}
+ @keyframes animateBg {
+  100% {
+     filter:hue-rotate(360deg); 
+  }
+} 
+
+
+
+.main_box{
+    background: url("Photo2.jpg");
+    height: 100vh;
+    background-size: cover;
+  }
+.login-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background:transparent;
+  border-radius: px;
+  border: 1px solid rgba(255,255,255,.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur();
+}
+
+h2 {
+  font-size:2em;
+  color:#ac1313;
+  text-align:center;
+}
+.input-box {
+  position:relative;
+  width:310px;
+  margin:30px 0;
+  border-bottom:1px solid #b70f0f;
+}
+.input-box label {
+  position:absolute;
+  top:50%;
+  left:5px;
+  transform:translateY(-50%);
+  font-size:1em;
+  color:#23e129;
+  pointer-events:none;
+  transition:.5s;
+}
+.input-box input:focus  ~ label,
+.input-box input:valid  ~ label {
+  top:-5px;
+}
+.input-box input {
+  width:100%;
+  height:50px;
+  background:transparent;
+  border:none;
+  outline:none;
+  font-size:1em;
+  color:#bb3c69;
+  padding:0 35px 0 5px;
+}
+.input-box .icon {
+  position:absolute;
+  right:8px;
+  top:50%;
+  color: #1dc674;
+  transform: translateY(-50%);
+}
+.remember-forgot {
+  margin:-15px 0 15px;
+  font-size:.9em;
+  color:#eb55cf;
+  display:flex;
+  justify-content:space-between;
+}
+.remember-forgot label input {
+  margin-right:3px;
+}
+.remember-forgot a {
+  color:#33a1b0;
+  text-decoration:none;
+}
+.remember-forgot a:hover {
+  text-decoration:underline;
+}
+button {
+  width:100%;
+  height:40px;
+  background-color:#6fd03b;
+  border:none;
+  border-radius:40px;
+  cursor:pointer;
+  font-size:1em;
+  color:#000;
+  font-weight: 500;
+}
+.register-link {
+  font-size:.9em;
+  color:#c14d4d;
+  text-align:center;
+  margin:25px 0 10px;
+}
+.register-link p a {
+  color:#b3b377;
+  text-decoration:none;
+  font-weight:600;
+}
+.register-link p a:hover {
+  text-decoration:underline;
+}
+@media (max-width:500px) {
+  .login-box {
+    width:100%;
+    height:100vh;
+    border:none;
+    border-radius:0;
+  }
+  .input-box {
+    width:290px;
+  }
+}
+
+
+/* nav --------------------------------- */
+
+nav {
+  width: 100%; /* Adjust as needed */
+  background-color: #fff; /* Adjust background color */
+  padding: 20px; /* Adjust padding */
+}
+
+
+nav a img {
+/* width: 167px; */
+width: 200px; /* Adjust width */
+height: 150px; /* Adjust height */
+background-image: url("1709483107745w126rx7x.jpg"); /* Replace with your image URL */
+background-size: cover;
+border-radius: 50%; /* Creates a circular shape */
+overflow: hidden; /* Clips the background image to the shape*/
+
+}

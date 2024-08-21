@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  .main_box{
+    background: url("Photo2.jpg");
+    height: 100vh;
+    background-size: cover;
+  }
+  .btn_one i{
+    color: white ;
+    font-size: 30px;
+    font-weight: 700px;
+    position: absolute ;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .sidebar_menu {
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width:300px ;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+   transition: all 0.3s linear;
+  }
+  .sidebar_menu .logo{
+    position: absolute ;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    height: 60px;
+  }
+  .sidebar_menu .logo a {
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .sidebar_menu .btn_two i{
+    color: grey;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 275px ;
+    opacity: 0;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  }
+  
+  
+  .sidebar_menu .menu{
+    position: absolute ;
+    width: 100%;
+    top: 80px;
+  }
+  .sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+  }
+  .sidebar_menu .menu i,a{
+    color: white ;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .sidebar_menu .menu i{
+    padding-right: 8px;
+  }
+  
+  .sidebar_menu .social_media{
+    position: absolute ;
+    left: 25%;
+    bottom: 50px;
+  }
+  .sidebar_menu .social_media i{
+    color: white ;
+    opacity: 0.5;
+    padding: 0 5px;
+  }
+  #check {
+    display: none;
+  }
+  .sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgb(30, 182, 154);
+  }
+  .btn_one i:hover{
+    font-size: 40px;
+  }
+  .btn_two i:hover{
+    font-size: 30px;
+  }
+  .sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  #check:checked ~ .sidebar_menu{
+    left: 0;
+  }
+  #check:checked ~ .btn_one i{
+    opacity: 0;
+  }
+  #check:checked ~ .sidebar_menu .btn_two i{
+    opacity : 1;
+  }
+
+
+
+  /* --------------------------------------------------- */
+   .header{
+    position: fixed;
+    top: 0;
+    left: 20%;
+    width: 65%;
+    padding:20px 10% ;
+    background: transparent ;
+    display: flex;
+    justify-content:space-between;
+    align-items: right;
+    z-index: 100 ;
+  } 
+
+  .logo{
+     font-size: 30px;
+     color: rgb(244, 245, 244);
+     text-decoration: none;
+     font-weight: 600;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+   
+
+   .navbar a{
+    font-size: 25px;
+    color: rgb(237, 237, 198);
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 30px;
+    transition: 1s    ;
+    padding-left: 30;
+  } 
+
+   .navbar a:hover  ,.navbar a .active {
+    color:rgb(190, 167, 18);
+    
+  } 
+
+
+
+  /* footor page */
+
+
+   .footerpro{
+    margin-top: 15px;
+  }
+  .foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.85rem;
+  }
+  .foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .ul1{
+    margin-top: 20px;
+  }
+  .ul1 a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+  }
+  .foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    height:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo{
+    background-image: url("./img/amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+    
+  }
+  .foot-panel4{
+    background-color: #0f1111;
+    
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+  
+  }
+  .pages{
+    
+    padding: 25px;
+  }
+  .hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+  
+  }
+  .hero-msg a{
+   color: #007185;
+  } 
